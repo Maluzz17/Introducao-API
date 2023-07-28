@@ -1,14 +1,14 @@
-import express from "express";      // Requisição do pacote do express
-const app = express();              // Instancia o Express
-const port = 3000;                  // Define a porta
+import express from "express";  
+const app = express();              
+const port = 3000;             
 
-app.get("/", (req, res) => {        // Cria a rota da raiz do projeto
-  res.json({
-    nome: "Maria Luiza da Silva Santos",      // Substitua pelo seu nome
-  });
-  console.log("Rota / solicitada");
+app.get("/", (req, res) => {        
+    res.json({
+        nome: "Maria Luiza",     
+    });
+    console.log("Rota / solicitada");
 });
 
-app.listen(port, () => {            // Um socket para "escutar" as requisições
-  console.log(`Serviço escutando na porta:  ${port}`);
+app.listen(port, () => {
+    console.log(`Serviço escutando na porta:  ${port}`);
 });
