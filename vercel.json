@@ -1,25 +1,28 @@
 {
-    "version": 2,
-    "builds":[
-      {
-        "src": "index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "(.*)",
-        "dest": "index.js"
-      }
-    ]
-  }
-  {
-    "nome": "Maria Luiza",
-    "senha": "371",
-    "email": "mlss5@aluno.ifnmg.edu.br"
-  }
-  {
-    "nome": "Maria Luiza",
-    "senha": "371",
-    "email": "mlss5@aluno.ifnmg.edu.br"
-  }
+  "version": 2,
+  "builds":[
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "(.*)",
+      "dest": "index.js"
+    }
+  ]
+}
+
+{
+  "nome": "Maria Luiza",
+  "senha": "137",
+  "email": "mlss5@aluno.ifnmg.edu.br"
+}
+
+{
+  "id": 1,
+  "nome": "Maria Luiza",
+  "senha": "137",
+  "email": "mlss5@aluno.ifnmg.edu.br"
+}

@@ -15,6 +15,8 @@ async function selectUsuarios() {
   return res.rows;
 }
 
+export { selectUsuarios };
+
 //bd.js
 async function selectUsuario(id) {
   const client = await connect();
@@ -23,6 +25,7 @@ async function selectUsuario(id) {
   const res = await client.query(query, usuario);
   return res.rows;
 }
+
 //bd.js
 export { selectUsuarios, selectUsuario };
 
