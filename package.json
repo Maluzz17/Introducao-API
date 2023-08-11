@@ -16,3 +16,8 @@
     "pg": "^8.11.2"
   }
 }
+{
+  "nome": "Nome do usuário",
+  "senha": "***",
+  "email": "email_usuario@email.com"
+}
