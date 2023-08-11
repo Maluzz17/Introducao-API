@@ -13,3 +13,9 @@
       }
     ]
   }
+
+  {
+    "nome": "Nome do usuário",
+    "senha": "***",
+    "email": "email_usuario@email.com"
+  }
