@@ -1,14 +1,18 @@
-import express from "express";      // Requisição do pacote do express
-const app = express();              // Instancia o Express
-const port = 3000;                  // Define a porta
+//bd.js
+import pkg from "pg";
+const { Pool } = pkg;
 
-app.get("/", (req, res) => {        // Cria a rota da raiz do projeto
-  console.log("Rota GET/ solicitada");
-  res.json({
-    nome: "Maria Luiza da Silva Santos",      // Substitua pelo seu nome
+async function connect() {
+  const pool = new Pool({
+    connectionString: process.env.URL_BD,
   });
-});
+  return pool.connect();
+}
 
-app.listen(port, () => {            // Um socket para "escutar" as requisições
-  console.log(`Serviço escutando na porta:  ${port}`);
-});
+async function selectUsuarios() {
+  const client = await connect();
+  const res = await client.query("SELECT * FROM usuario");
+  return res.rows;
+}
+
+export { selectUsuarios };
