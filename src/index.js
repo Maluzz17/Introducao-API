@@ -5,8 +5,8 @@ import express from "express";
 
 dotenv.config();
 
-const app = express();              
-const port = 3000;                 
+const app = express();             
+const port = 3000;                  
 
 app.use(express.json());
 
@@ -16,11 +16,11 @@ app.use(roteadorLogin);
 
 app.get("/", (req, res) => {        
   res.json({
-    nome: "Davi Gomes Mendes",     
+    nome: "Maria Luiza da Silva Santos",      
   });
   console.log("Rota / solicitada");
 });
 
-app.listen(port, () => {           
+app.listen(port, () => {         
   console.log(`Serviço escutando na porta:  ${port}`);
 });
