@@ -1,5 +1,5 @@
 import { Router } from "express";
-import verificarAutenticacao from "../middleware/autenticacao.js";
+import verificarAutenticacao from "../middlewares/autenticacao.js";
 import {
   selectUsuario,
   selectUsuarios,
